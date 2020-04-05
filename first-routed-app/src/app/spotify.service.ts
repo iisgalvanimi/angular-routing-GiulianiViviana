@@ -15,7 +15,7 @@ export class SpotifyService {
     const url = `https://api.spotify.com/v1/search?q=${query}&type=track`;
     const headers = new HttpHeaders({
       Authorization:
-        'Bearer BQCB3dvE0fmG3GM7kuY0gsBNu8N8ciGAt3Y1dTcyvMu5aQTbFQd4QzdoCZn8zXDR0Je3uRyvoD3TUVlC7EdJJaoWgfIo5ZcgMbNmfK5AlGQ4f1w2jMjFmHQz0X1-3ui5nUi8PSW1cWwEMfNwjtoDdaVeMGS_KzH4Fyk"'
+        'Bearer BQBz-4rq8fufBf85DYDrysCS3H9xTFoiYcXMGXQM099zpUwYjWJ0FTLYG2dgHSRvdV_nZ1IjEP3Zj9TipJeAEezm_pTGaisrkZgZKn63vNy0y7rSsmD5OaeFttD7baeyHOAezNuY7fO7qZVfJuo7G77EFUn5FOM4AgI"'
     });
 
     let obsTracks = this.http.get(url, { headers });
