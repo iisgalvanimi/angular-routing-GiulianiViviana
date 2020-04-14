@@ -17,7 +17,7 @@ export class SpotifyService {
     const url = `https://api.spotify.com/v1/search?q=${query}&type=track`;
     const headers = new HttpHeaders({
       Authorization:
-        'Bearer BQCRNmwHU1naSzPSKtg2EJb93dN-hw6237GSSokHHJm9PkOiOlfVxknEBQEqxVd5NmJHp_90BG7pbiu8TWR8Cr-Oi1gFsGZjajx9heF1mcj3EqHHyaPFpQ9TdA-Dyn6rCJv8nev1kInrMsSiFavGNYjupl-xq1lsSUo'
+        'Bearer BQB5bb3eQ9FdvxZEwuwUw2g7OEQUlbTshV3LWpo_UO2aSP7tTtieQAy-MGaYSMwCSrHwwcVyBG87pSQ-Mjz21L76hEQMZ1D1noQnh3hwPPyKAKXokt7FWpLf_BTw4N524_vvYJJeYqg6ochf7cKJubc6qDOxdcqf0oU'
     });
 
     let obsTracks = this.http.get(url, { headers });
@@ -30,7 +30,7 @@ export class SpotifyService {
     const url = `https://api.spotify.com/v1/tracks/${id}`;
     const headers = new HttpHeaders({
       Authorization:
-        'Bearer BQCRNmwHU1naSzPSKtg2EJb93dN-hw6237GSSokHHJm9PkOiOlfVxknEBQEqxVd5NmJHp_90BG7pbiu8TWR8Cr-Oi1gFsGZjajx9heF1mcj3EqHHyaPFpQ9TdA-Dyn6rCJv8nev1kInrMsSiFavGNYjupl-xq1lsSUo'
+        'Bearer BQB5bb3eQ9FdvxZEwuwUw2g7OEQUlbTshV3LWpo_UO2aSP7tTtieQAy-MGaYSMwCSrHwwcVyBG87pSQ-Mjz21L76hEQMZ1D1noQnh3hwPPyKAKXokt7FWpLf_BTw4N524_vvYJJeYqg6ochf7cKJubc6qDOxdcqf0oU'
     });
 
     return this.http.get(url, { headers });
@@ -40,12 +40,19 @@ export class SpotifyService {
     const url = `https://api.spotify.com/v1/albums/${id}`;
     const headers = new HttpHeaders({
       Authorization:
-        'Bearer BQCRNmwHU1naSzPSKtg2EJb93dN-hw6237GSSokHHJm9PkOiOlfVxknEBQEqxVd5NmJHp_90BG7pbiu8TWR8Cr-Oi1gFsGZjajx9heF1mcj3EqHHyaPFpQ9TdA-Dyn6rCJv8nev1kInrMsSiFavGNYjupl-xq1lsSUo'
+        'Bearer BQB5bb3eQ9FdvxZEwuwUw2g7OEQUlbTshV3LWpo_UO2aSP7tTtieQAy-MGaYSMwCSrHwwcVyBG87pSQ-Mjz21L76hEQMZ1D1noQnh3hwPPyKAKXokt7FWpLf_BTw4N524_vvYJJeYqg6ochf7cKJubc6qDOxdcqf0oU'
     });
 
     return this.http.get(url, { headers });
   }
 
+   getArtist(id: string) {
+    const url = `https://api.spotify.com/v1/artists/${id}`;
+    const headers = new HttpHeaders({
+      Authorization:
+        'Bearer BQB5bb3eQ9FdvxZEwuwUw2g7OEQUlbTshV3LWpo_UO2aSP7tTtieQAy-MGaYSMwCSrHwwcVyBG87pSQ-Mjz21L76hEQMZ1D1noQnh3hwPPyKAKXokt7FWpLf_BTw4N524_vvYJJeYqg6ochf7cKJubc6qDOxdcqf0oU'
+    });
 
-
+    return this.http.get(url, { headers });
+  }
 }
